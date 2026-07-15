@@ -1,4 +1,4 @@
-import Banner from './Banner';
+import Banner from '../components/Banner';
 import PropTypes from 'prop-types';
 
 export default function PageLayout({ children }) {

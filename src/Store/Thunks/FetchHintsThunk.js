@@ -1,3 +1,4 @@
+import { Env } from '@humanwhocodes/env';
 import {
 	loadingHits,
 	loadingHitsSuccess,
@@ -5,8 +6,10 @@ import {
 	setNothing
 } from '../HitsSlice';
 
+const env = new Env();
+
 export const FetchHintsThunk = () => async (dispatch, getState) => {
-	const url = 'http://localhost:7075/api/top-sales';
+	const url = `${env.get('APP_BASE_URL', 'http://localhost:7075')}/api/top-sales`;
 	dispatch(loadingHits());
 
 	try {

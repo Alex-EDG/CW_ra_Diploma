@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from '../Components/Layouts/Header';
-import Page404 from '../Components/Pages/Page404';
-import Footer from '../Components/Layouts/Footer';
-import About from '../Components/Pages/About';
-import Contacts from '../Components/Pages/Contacts';
-import Home from '../Components/Pages/Home';
-import Catalog from '../Components/Pages/Catalog';
-import CatalogItem from '../Components/Pages/CatalogItem';
-import Cart from '../Components/Pages/Cart';
+import Header from '../layouts/Header';
+import Page404 from '../pages/Page404';
+import Footer from '../components/Footer';
+import About from '../pages/About';
+import Contacts from '../pages/Contacts';
+import Home from '../pages/Home';
+import Catalog from '../pages/Catalog';
+import CatalogItem from '../pages/CatalogItem';
+import Cart from '../pages/Cart';
 
 function App() {
 	return (

@@ -1262,6 +1262,11 @@
     debug "^4.3.1"
     minimatch "^3.0.5"
 
+"@humanwhocodes/env@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@humanwhocodes/env/-/env-4.0.1.tgz#4385edf152c4bafa049136e052b37e381fc78cce"
+  integrity sha512-zSCrqngdlvOm1YpKvvZAZC/WTlc/RePP1N6/kNzGLxbzMCZNWiMZIS8t8/yiLgnbg125yAdclqwJHJxJvPtRWA==
+
 "@humanwhocodes/module-importer@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/module-importer/-/module-importer-1.0.1.tgz#af5b2691a22b44be847b0ca81641c5fb6ad0172c"

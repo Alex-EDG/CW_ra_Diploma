@@ -1,7 +1,10 @@
+import { Env } from '@humanwhocodes/env';
 import { loadingCategoriesSuccess } from '../CategoriesSlice';
 
+const env = new Env();
+
 export const FetchCategoriesThunk = () => async (dispatch, getState) => {
-	const url = 'http://localhost:7075/api/categories';
+	const url = `${env.get('APP_BASE_URL', 'http://localhost:7075')}/api/categories`;
 	try {
 		const response = await fetch(url);
 		if (!response.ok) {

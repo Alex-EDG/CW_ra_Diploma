@@ -1,9 +1,9 @@
 import { useSelector, useDispatch } from 'react-redux';
-import PreLoader from '../UI/PreLoader';
+import PreLoader from '../ui/Preloader';
 import { useEffect } from 'react';
-import { FetchHintsThunk } from '../../Store/Thunks/FetchHintsThunk';
-import Card from './Card';
-import ErrorRetry from '../UI/ErrorRetry';
+import { FetchHintsThunk } from '../store/thunks/FetchHintsThunk';
+import Card from '../components/Card';
+import ErrorRetry from '../ui/ErrorRetry';
 
 export default function Hits() {
 	const { hits, loading, error } = useSelector(state => state.hits);

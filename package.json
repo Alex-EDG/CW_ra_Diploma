@@ -1,18 +1,19 @@
 {
-  "name": "cw-ra-diploma",
-  "description": "Итоговая работа по курсу «React: Библиотека №1 в современной фронтенд-разработке»",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/Alex-EDG/CW_ra_Diploma.git"
-  },
-  "author": "Alexey Neronov",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Alex-EDG/CW_ra_Diploma/issues"
-  },
+	"name": "cw-ra-diploma",
+	"description": "Итоговая работа по курсу «React: Библиотека №1 в современной фронтенд-разработке»",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/Alex-EDG/CW_ra_Diploma.git"
+	},
+	"author": "Alexey Neronov",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Alex-EDG/CW_ra_Diploma/issues"
+	},
 	"private": true,
-  "version": "0.1.0",
+	"version": "0.1.0",
 	"dependencies": {
+		"@humanwhocodes/env": "^4.0.1",
 		"@reduxjs/toolkit": "^2.12.0",
 		"@testing-library/dom": "^10.4.1",
 		"@testing-library/jest-dom": "^6.9.1",

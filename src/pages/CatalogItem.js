@@ -1,17 +1,17 @@
 import { useEffect } from 'react';
-import PageLayout from '../Layouts/PageLayout';
+import PageLayout from '../layouts/PageLayout';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { FetchCardThunk } from '../../Store/Thunks/FetchCardThunk';
-import PreLoader from '../UI/PreLoader';
-import ErrorRetry from '../UI/ErrorRetry';
+import { FetchCardThunk } from '../store/thunks/FetchCardThunk';
+import PreLoader from '../ui/Preloader';
+import ErrorRetry from '../ui/ErrorRetry';
 import {
 	decrementCount,
 	incrementCount,
 	resetCard,
 	selectSize
-} from '../../Store/CardSlice';
-import { addToCart } from '../../Store/CartSlice';
+} from '../store/CardSlice';
+import { addToCart } from '../store/CartSlice';
 
 export default function CatalogItem() {
 	const { availableSizes, count, selectedSize, card, loading, error } =

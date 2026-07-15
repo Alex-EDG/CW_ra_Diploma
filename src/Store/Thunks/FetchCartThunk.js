@@ -1,3 +1,4 @@
+import { Env } from '@humanwhocodes/env';
 import {
 	loadingCart,
 	loadingCartFailed,
@@ -5,8 +6,10 @@ import {
 	resetCart
 } from '../CartSlice';
 
+const env = new Env();
+
 export const FetchCartThunk = body => async (dispatch, getState) => {
-	const url = 'http://localhost:7075/api/order';
+	const url = `${env.get('APP_BASE_URL', 'http://localhost:7075')}/api/order`;
 	dispatch(loadingCart());
 
 	try {

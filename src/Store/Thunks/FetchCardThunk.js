@@ -1,11 +1,14 @@
+import { Env } from '@humanwhocodes/env';
 import {
 	loadingCard,
 	loadingCardSuccess,
 	setAvailableSizes
 } from '../CardSlice';
 
+const env = new Env();
+
 export const FetchCardThunk = id => async (dispatch, getState) => {
-	const url = `http://localhost:7075/api/items/${id}`;
+	const url = `${env.get('APP_BASE_URL', 'http://localhost:7075')}/api/items/${id}`;
 	dispatch(loadingCard());
 
 	try {

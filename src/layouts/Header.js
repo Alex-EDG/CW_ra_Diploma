@@ -1,8 +1,8 @@
 import { NavLink, Link, useNavigate } from 'react-router-dom';
-import logo from '../../Assets/images/header-logo.png';
+import logo from '../assets/images/header-logo.png';
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { changeSearch } from '../../Store/CardsSlice';
+import { changeSearch } from '../store/CardsSlice';
 
 export default function Header() {
 	const { items } = useSelector(state => state.cart);

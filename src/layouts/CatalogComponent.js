@@ -1,12 +1,12 @@
 import { useSelector, useDispatch } from 'react-redux';
-import PreLoader from '../UI/PreLoader';
+import PreLoader from '../ui/Preloader';
 import { useEffect, useState } from 'react';
-import { FetchCategoriesThunk } from '../../Store/Thunks/FetchCategoriesThunk';
-import ErrorRetry from '../UI/ErrorRetry';
+import { FetchCategoriesThunk } from '../store/thunks/FetchCategoriesThunk';
+import ErrorRetry from '../ui/ErrorRetry';
 import Category from './Category';
-import { FetchCardsThunk } from '../../Store/Thunks/FetchCardsThunk';
-import Card from './Card';
-import { changeSearch } from '../../Store/CardsSlice';
+import { FetchCardsThunk } from '../store/thunks/FetchCardsThunk';
+import Card from '../components/Card';
+import { changeSearch } from '../store/CardsSlice';
 import PropTypes from 'prop-types';
 
 export default function CatalogComponent({ searchInput }) {

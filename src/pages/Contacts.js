@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import PageLayout from '../Layouts/PageLayout';
+import PageLayout from '../layouts/PageLayout';
 
 export default function Contacts() {
 	return (

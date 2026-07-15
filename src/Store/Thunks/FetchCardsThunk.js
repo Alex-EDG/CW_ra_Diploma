@@ -1,3 +1,4 @@
+import { Env } from '@humanwhocodes/env';
 import {
 	switchBtn,
 	loadingCards,
@@ -6,6 +7,8 @@ import {
 	loadingInitialCards,
 	changeShowCards,
 } from '../CardsSlice';
+
+const env = new Env();
 
 export const FetchCardsThunk =
 	(offset = 0, category = 0, search = '', more = false) =>
@@ -29,9 +32,7 @@ export const FetchCardsThunk =
 			urlParams.append('q', search);
 		};
 
-		// const url = `https://bosa-noga-backend-kc9h.onrender.com/api/items?${urlParams}`;
-		const url = `http://localhost:7075/api/items?${urlParams}`;
-
+    const url = `${env.get('APP_BASE_URL', 'http://localhost:7075')}/api/items?${urlParams}`;
 		try {
 			const response = await fetch(url);
 

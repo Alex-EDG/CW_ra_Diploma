@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectCategory } from '../../Store/CategoriesSlice';
+import { selectCategory } from '../store/CategoriesSlice';
 import PropTypes from 'prop-types';
 
 export default function Category({ id, title }) {

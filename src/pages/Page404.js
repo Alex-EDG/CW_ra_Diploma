@@ -1,4 +1,4 @@
-import PageLayout from '../Layouts/PageLayout';
+import PageLayout from '../layouts/PageLayout';
 
 export default function Page404() {
 	return (

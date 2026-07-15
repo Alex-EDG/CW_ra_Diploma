@@ -2,9 +2,9 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 import url from 'node:url';
-const { randomInt } = await import('node:crypto');
 import { setTimeout } from 'node:timers/promises';
 
+const { randomInt } = await import('node:crypto');
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 

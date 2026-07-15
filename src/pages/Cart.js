@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
-import PageLayout from '../Layouts/PageLayout';
+import PageLayout from '../layouts/PageLayout';
 import { Link } from 'react-router-dom';
-import { removeInCart, resetResponse } from '../../Store/CartSlice';
+import { removeInCart, resetResponse } from '../store/CartSlice';
 import { useEffect, useState } from 'react';
-import { FetchCartThunk } from '../../Store/Thunks/FetchCartThunk';
-import PreLoader from '../UI/PreLoader';
+import { FetchCartThunk } from '../store/thunks/FetchCartThunk';
+import PreLoader from '../ui/Preloader';
 
 export default function Cart() {
 	const dispatch = useDispatch();
