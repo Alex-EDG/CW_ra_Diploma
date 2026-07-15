@@ -21,7 +21,19 @@ footer {
 
 .card-img-top {
 	object-fit: contain;
-	height: 465px;
+	height: 300px;
+}
+
+.card-text {
+	height: 50px;
+  margin: 0px 0px 10px;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.card-body {
+	height: 180px;
+  padding: 10px;
 }
 
 .disable {
@@ -333,6 +345,12 @@ section {
 }
 
 /* Bootstrap */
+.nav-link {
+	font-weight: 700;
+  font-size: 1.2rem;
+  color: #0800ff;
+}
+
 .nav-link.active {
 	color: #ff0000;
 }
